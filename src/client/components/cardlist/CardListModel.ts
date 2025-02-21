@@ -22,6 +22,7 @@ const MODULE_ABBREVIATIONS: Record<GameModule, string> = {
   ceo: 'l', // ceo abbreviation is 'l' for leader, since 'c' and 'C' are already taken
   starwars: 'w',
   underworld: 'u',
+  nohate: 'h',
 };
 
 const TYPE_ABBREVIATIONS: Record<TypeOption, string> = {
@@ -90,6 +91,7 @@ export function hashToModel(windowLocationHash: string) {
       ceo: true,
       starwars: true,
       underworld: true,
+      nohate: true,
     },
     types: {
       event: true,

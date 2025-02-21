@@ -415,6 +415,7 @@ export class Server {
       venusNextExtension: options.venusNextExtension,
       undoOption: options.undoOption,
       underworldExpansion: options.underworldExpansion,
+      noHateExpansion: options.noHateExpansion,
     };
   }
 
