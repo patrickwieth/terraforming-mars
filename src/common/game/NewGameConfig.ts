@@ -88,4 +88,5 @@ export interface NewGameConfig {
   startingPreludes: number;
   starWarsExpansion: boolean,
   underworldExpansion: boolean,
+  noHateExpansion: boolean,
 }
