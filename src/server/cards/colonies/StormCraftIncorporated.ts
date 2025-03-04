@@ -25,7 +25,7 @@ export class StormCraftIncorporated extends ActiveCorporationCard {
 
       metadata: {
         cardNumber: 'R29',
-        description: 'You start with 48 M€.',
+        description: 'You start with 50 M€.',
         renderData: CardRenderer.builder((b) => {
           b.br.br.br;
           b.megacredits(50);
