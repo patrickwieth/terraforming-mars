@@ -17,7 +17,7 @@ export class Pristar extends CorporationCard {
 
       metadata: {
         cardNumber: 'R07',
-        description: 'You start with 53 M€. Decrease your TR 2 steps. 1 VP per preservation resource here.',
+        description: 'You start with 53 M€. Decrease your TR 1 step. 1 VP per preservation resource here.',
 
         renderData: CardRenderer.builder((b) => {
           b.br.br.br;
