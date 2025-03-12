@@ -14,7 +14,7 @@ export class PowerSupplyConsortium extends Card implements IProjectCard {
       cost: 5,
 
       behavior: {
-        production: {energy: 1},
+        production: {energy: 2},
       },
 
       requirements: {tag: Tag.POWER, count: 2},
@@ -22,10 +22,10 @@ export class PowerSupplyConsortium extends Card implements IProjectCard {
         cardNumber: '160',
         renderData: CardRenderer.builder((b) => {
           b.production((pb) => {
-            pb.plus().energy(1);
+            pb.energy(2);
           });
         }),
-        description: 'Requires 2 power tags. Increase your energy production 1 step.',
+        description: 'Requires 2 power tags. Increase your energy production 2 steps.',
       },
     });
   }
