@@ -68,6 +68,7 @@ export type CreateGameModel = {
   turmoil: boolean;
   twoCorpsVariant: boolean;
   underworldExpansion: boolean,
+  noHateExpansion: boolean,
   undoOption: boolean;
   venusNext: boolean;
 }

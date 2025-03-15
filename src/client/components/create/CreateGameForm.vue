@@ -161,6 +161,12 @@
                                 <div class="create-game-expansion-icon expansion-icon-underworld"></div>
                                 <span v-i18n>Underworld</span><span> 🆕</span>&nbsp;<a href="https://github.com/terraforming-mars/terraforming-mars/wiki/Underworld" class="tooltip" target="_blank">&#9432;</a>
                             </label>
+
+                          <input type="checkbox" name="nohate" id="nohate-checkbox" v-model="noHateExpansion">
+                          <label for="nohate-checkbox" class="expansion-button">
+                            <div class="create-game-expansion-icon expansion-icon-nohate"></div>
+                            <span v-i18n>No Hate️</span><span></span>&nbsp;
+                          </label>
                         </div>
 
                         <div class="create-game-page-column">
@@ -657,6 +663,7 @@ export default (Vue as WithRefs<Refs>).extend({
       startingPreludes: 4,
       starWarsExpansion: false,
       underworldExpansion: false,
+      noHateExpansion: false,
       preludeDraftVariant: undefined,
 
       preludeToggled: false,
@@ -1251,6 +1258,7 @@ export default (Vue as WithRefs<Refs>).extend({
         startingPreludes,
         starWarsExpansion: this.starWarsExpansion,
         underworldExpansion: this.underworldExpansion,
+        noHateExpansion: this.noHateExpansion,
       };
       return JSON.stringify(dataToSend, undefined, 4);
     },

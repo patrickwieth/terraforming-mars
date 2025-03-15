@@ -43,5 +43,6 @@ export type GameOptionsModel = {
   twoCorpsVariant: boolean,
   venusNextExtension: boolean,
   undoOption: boolean,
+  noHateExpansion: boolean,
   underworldExpansion: boolean;
 }
