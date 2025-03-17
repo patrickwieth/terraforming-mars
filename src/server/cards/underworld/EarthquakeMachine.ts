@@ -24,7 +24,7 @@ export class EarthquakeMachine extends Card implements IProjectCard {
           b.action('Spend 1 energy to excavate an underground resource on any space on Mars that has no tile on it.',
             (ab) => ab.energy(1).startAction.excavate(1).asterix());
           b.br;
-          b.plainText('Requires 2 science tags. Decrease any plant production 1 step');
+          b.plainText('Requires 2 science tags.');
         }),
       },
     });
