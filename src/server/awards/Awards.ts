@@ -35,7 +35,6 @@ import {Biologist} from './terraCimmeria/Biologist';
 import {Economizer2} from './terraCimmeria/Economizer2';
 import {Politician} from './terraCimmeria/Politician';
 import {Urbanist} from './terraCimmeria/Urbanist';
-import {Warmonger} from './terraCimmeria/Warmonger';
 import {Zoologist2} from './amazonisPlanitia/Zoologist';
 import {Kingpin} from './underworld/Kingpin';
 import {EdgeLord} from './underworld/EdgeLord';
@@ -106,7 +105,7 @@ export const TERRA_CIMMERIA_AWARDS = [
   new Economizer2(),
   new Politician(),
   new Urbanist(),
-  new Warmonger(),
+  // new Warmonger(),
 ];
 
 export const VASTITAS_BOREALIS_AWARDS = [
