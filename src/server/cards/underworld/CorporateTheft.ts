@@ -27,7 +27,7 @@ export class CorporateTheft extends Card implements IProjectCard {
         renderData: CardRenderer.builder((b) => {
           b.text('STEAL').wild(1).corruption().asterix();
         }),
-        description: 'Requires 2 corruption. Aquire 1 resource and put it on any of your card. ' +
+        description: 'Requires 2 corruption. Aquire 1 resource and put it on any of your cards. ' +
           'Gain 1 corruption. ',
       },
     });
