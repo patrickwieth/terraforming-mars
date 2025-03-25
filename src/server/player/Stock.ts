@@ -3,7 +3,6 @@
 import {IPlayer, ResourceSource, isIPlayer} from '../IPlayer';
 import {Resource} from '../../common/Resource';
 import {Units} from '../../common/Units';
-import {CrashSiteCleanup} from '../cards/promo/CrashSiteCleanup';
 
 export class Stock {
   private units: Units;
@@ -130,9 +129,6 @@ export class Stock {
     }
 
     const from = options?.from;
-    if (isIPlayer(from)) {
-      CrashSiteCleanup.resourceHook(this.player, resource, delta, from);
-    }
 
     // Mons Insurance hook
     if (options?.from !== undefined && delta < 0 && (isIPlayer(from) && from.id !== this.player.id)) {
