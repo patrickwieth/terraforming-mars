@@ -11,7 +11,7 @@ export class CorporateTheft extends Card implements IProjectCard {
       type: CardType.EVENT,
       cost: 10,
 
-      requirements: {corruption: 2},
+      requirements: {corruption: 1},
 
       behavior: {
         addResourcesToAnyCard: {
@@ -25,9 +25,10 @@ export class CorporateTheft extends Card implements IProjectCard {
       metadata: {
         cardNumber: 'U61',
         renderData: CardRenderer.builder((b) => {
-          b.text('STEAL').wild(1).corruption().asterix();
+          b.wild(1).asterix().br;
+          b.corruption();
         }),
-        description: 'Requires 2 corruption. Aquire 1 resource and put it on any of your cards. ' +
+        description: 'Requires 1 corruption. Aquire 1 resource and put it on any of your cards. ' +
           'Gain 1 corruption. ',
       },
     });
