@@ -14,7 +14,7 @@ export class ExcavatorLeasing extends Card implements IProjectCard {
       tags: [Tag.MARS, Tag.BUILDING],
       cost: 8,
 
-      requirements: {excavation: 15, all},
+      requirements: {excavation: 10, all},
 
       metadata: {
         cardNumber: 'U35',
@@ -24,7 +24,7 @@ export class ExcavatorLeasing extends Card implements IProjectCard {
           b.effect('When ANOTHER player excavates underground resources, you gain 1 M€ per excavation.',
             (eb) => eb.excavate(1, {all}).startEffect.megacredits(1)).br;
         }),
-        description: 'Requires 15 excavation markers in play.',
+        description: 'Requires 10 excavation markers in play.',
       },
     });
   }
