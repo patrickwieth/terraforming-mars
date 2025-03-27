@@ -14,15 +14,15 @@ export class PrivateSecurity extends Card implements IProjectCard {
       tags: [Tag.EARTH],
 
       action: {
-        spend: {megacredits: 3},
+        spend: {megacredits: 4},
         underworld: {corruption: 1},
       },
 
       metadata: {
         cardNumber: 'Pf25',
         renderData: CardRenderer.builder((b) => {
-          b.action('Spend 3M€ to gain 1 curruption.',
-            (ab) => ab.megacredits(3).startAction.corruption(1)).br;
+          b.action('Spend 4M€ to gain 1 curruption.',
+            (ab) => ab.megacredits(4).startAction.corruption(1)).br;
         }),
       },
     });
