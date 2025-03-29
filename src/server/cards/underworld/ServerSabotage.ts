@@ -4,8 +4,6 @@ import {IProjectCard} from '../IProjectCard';
 import {CardType} from '../../../common/cards/CardType';
 import {IPlayer} from '../../IPlayer';
 import {Card} from '../Card';
-import {RemoveResourcesFromCard} from '../../deferredActions/RemoveResourcesFromCard';
-import {CardResource} from '../../../common/CardResource';
 import {UnderworldExpansion} from '../../underworld/UnderworldExpansion';
 import {cancelled} from '../Options';
 export class ServerSabotage extends Card implements IProjectCard {
