@@ -7,6 +7,7 @@ import {CardType} from '../../../common/cards/CardType';
 import {ActionCard} from '../ActionCard';
 
 export class PrivateMilitaryContractor extends ActionCard implements IProjectCard {
+  // TODO
   constructor() {
     super({
       type: CardType.ACTIVE,
@@ -14,6 +15,9 @@ export class PrivateMilitaryContractor extends ActionCard implements IProjectCar
       cost: 18,
       tags: [Tag.JOVIAN, Tag.SPACE],
       resourceType: CardResource.FIGHTER,
+
+      requirements: {corruption: 2},
+      victoryPoints: {resourcesHere: {}},
 
       behavior: {
         addResources: 1,
@@ -27,15 +31,11 @@ export class PrivateMilitaryContractor extends ActionCard implements IProjectCar
       metadata: {
         cardNumber: 'U49',
         renderData: CardRenderer.builder((b) => {
-          b.effect(
-            'When blocking damage from other players, you can use fighters here as if they were corruption ' +
-            'resources. You cannot use them for score bribing or collusion.',
-            (eb) => eb.corruptionShield().startEffect.resource(CardResource.FIGHTER).equals().corruption().asterix()).br;
           b.action('Spend 1 titanium to add 1 fighter resource to this card.',
             (ab) => ab.titanium(1).startAction.resource(CardResource.FIGHTER)).br;
           b.resource(CardResource.FIGHTER);
         }),
-        description: 'Add 1 fighter resource to this card.',
+        description: 'Requires 2 Corruption. Add 1 fighter resource to this card.',
       },
     });
   }

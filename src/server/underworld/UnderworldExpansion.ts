@@ -223,7 +223,7 @@ export class UnderworldExpansion {
       .getAdjacentSpaces(space)
       .forEach((s) => UnderworldExpansion.identify(game, s, player, /* fromExcavate= */ true));
     const leaser = game.getCardPlayerOrUndefined(CardName.EXCAVATOR_LEASING);
-    if (leaser !== undefined) {
+    if (leaser !== undefined && leaser !== player) {
       leaser.stock.add(Resource.MEGACREDITS, 1, {log: true});
     }
   }
