@@ -33,7 +33,6 @@ export class ServerSabotage extends Card implements IProjectCard {
 
   public override bespokePlay(player: IPlayer) {
     const game = player.game;
-    game.defer(new RemoveResourcesFromCard(player, CardResource.DATA, 2));
     if (game.underworldData === undefined) {
       return;
     }
