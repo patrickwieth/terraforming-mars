@@ -22,7 +22,7 @@ export class CrashSiteCleanup extends Card implements IProjectCard {
         description: 'Lose all plants. Gain 1 titanium and 2 steel.',
         cardNumber: 'X17',
         renderData: CardRenderer.builder((b) => {
-          b.minus().text("ALL").plants(1).br;
+          b.minus().text('ALL').plants(1).br;
           b.titanium(1).steel(2);
         }),
       },
