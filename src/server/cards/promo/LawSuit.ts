@@ -26,7 +26,7 @@ export class LawSuit extends Card implements IProjectCard {
         renderData: CardRenderer.builder((b) => {
           b.megacredits(10).asterix();
         }),
-        description: 'Actually you don\'t really need a reason to sue someone. Gain 10 M€ next production phase.',
+        description: 'Requires 1 corruption. Actually you don\'t really need a reason to sue someone. Gain 10 M€ next production phase.',
       },
     });
   }
