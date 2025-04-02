@@ -5,7 +5,7 @@ import {Tag} from '../../common/cards/Tag';
 export class RimSettler extends BaseMilestone {
   constructor() {
     super(
-      'Rim Settler',
+      'Rim Jobber',
       'Have 3 Jovian tags in play',
       3);
   }
