@@ -38,7 +38,7 @@ export class Astrodrill extends CorporationCard implements IActionCard {
             });
             ce.vSpace();
             ce.action('Add an asteroid resource to ANY card OR gain any standard resource, OR remove an asteroid resource from this card to gain 3 titanium.', (eb) => {
-              eb.resource(CardResource.ASTEROID).startAction.titanium(2, {digit});
+              eb.resource(CardResource.ASTEROID).startAction.titanium(3, {digit});
             });
           });
         }),
