@@ -5,6 +5,8 @@ import {CardRenderer} from '../render/CardRenderer';
 import {Card} from '../Card';
 import {Tag} from '../../../common/cards/Tag';
 import {all} from '../Options';
+import {IPlayer} from '../../IPlayer';
+import {UnderworldExpansion} from '../../underworld/UnderworldExpansion';
 
 export class ExcavatorLeasing extends Card implements IProjectCard {
   constructor() {
@@ -27,5 +29,14 @@ export class ExcavatorLeasing extends Card implements IProjectCard {
         description: 'Requires 10 excavation markers in play.',
       },
     });
+  }
+
+  // overwrite canPlay instead of bespokeCanPlay to circumvent regular requirement checks
+  public override canPlay(player: IPlayer): boolean {
+    let totalExcavations = 0;
+    for (const p of player.game.getPlayers()) {
+      totalExcavations += UnderworldExpansion.excavationMarkerCount(p);
+    }
+    return totalExcavations >= 10;
   }
 }
