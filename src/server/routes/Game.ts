@@ -173,6 +173,7 @@ export class GameHandler extends Handler {
             underworldExpansion: gameReq.underworldExpansion,
             undoOption: gameReq.undoOption,
             venusNextExtension: gameReq.venusNext,
+            noHateExpansion: gameReq.noHateExpansion,
           };
 
           let game: IGame;
